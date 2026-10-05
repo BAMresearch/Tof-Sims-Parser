@@ -11,7 +11,7 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
 ]
-name = "tofsims"
+name = "tof-sims-parser"
 description = "An example parser for openBIS using the bam-masterdata interface."
 dynamic = ["version"]
 readme = "README.md"
@@ -120,4 +120,4 @@ where = ["src"]
 write_to = "src/masterdata_parser_tofsims/_version.py"
 
 [project.entry-points."bam.parsers"]
-tofsims = "masterdata_parser_tofsims:masterdata_parser_tofsims_entry_point"
+tof-sims-parser = "masterdata_parser_tofsims:masterdata_parser_tofsims_entry_point"
