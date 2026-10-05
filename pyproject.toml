@@ -11,7 +11,7 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
 ]
-name = "openbis-parser-example"
+name = "tofsims"
 description = "An example parser for openBIS using the bam-masterdata interface."
 dynamic = ["version"]
 readme = "README.md"
@@ -20,7 +20,7 @@ authors = [
   { name = "BAM Data Store", email = "datastore@bam.de" },
 ]
 maintainers = [
-  { name = "Jose M. Pizarro", email = "jose.pizarro-blanco@bam.de" },
+  { name = "Lucas Zimmermann", email = "lucas.zimmermann@bam.de" },
 ]
 license = { file = "LICENSE" }
 dependencies = [
@@ -29,8 +29,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/BAMresearch/openbis-parser-example"
-"Bug Tracker" = "https://github.com/BAMresearch/openbis-parser-example/issues"
+"Homepage" = "https://github.com/BAMresearch/Tof-Sims-Parser"
+"Bug Tracker" = "https://github.com/BAMresearch/Tof-Sims-Parser/issues"
 
 [project.optional-dependencies]
 dev = [
@@ -43,7 +43,7 @@ dev = [
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
-include = ["src/openbis_parser_example/*.py", "tests/*.py"]
+include = ["src/masterdata_parser_tofsims/*.py", "tests/*.py"]
 exclude = [
     ".bzr",
     ".direnv",
@@ -117,7 +117,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [tool.setuptools_scm]
-write_to = "src/openbis_parser_example/_version.py"
+write_to = "src/masterdata_parser_tofsims/_version.py"
 
 [project.entry-points."bam.parsers"]
 tofsims = "masterdata_parser_tofsims:masterdata_parser_tofsims_entry_point"
