@@ -28,8 +28,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/BAMresearch/Tof-Sims-Parser"
-"Bug Tracker" = "https://github.com/BAMresearch/Tof-Sims-Parser/issues"
+"Homepage" = "https://github.com/BAMresearch/openbis-parser-tofsims"
+"Bug Tracker" = "https://github.com/BAMresearch/openbis-parser-tofsims/issues"
 
 [project.optional-dependencies]
 dev = [
