@@ -333,7 +333,7 @@ def sanitize_code(name: str, max_length: int = 200) -> str:
 # ------------------------------------------------------------------
 
 
-class MasterdataParserTofsims(AbstractParser):
+class OpenbisParserTofsims(AbstractParser):
     """One Sample (in the SAMPLES collection) + one SIMS Experimental Step
     (in the collection selected in the UI, child of the Sample) per file group."""
 

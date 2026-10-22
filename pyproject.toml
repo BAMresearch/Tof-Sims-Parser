@@ -10,8 +10,8 @@ classifiers = [
   "Programming Language :: Python",
   "Programming Language :: Python :: 3.14",
 ]
-name = "tof-sims-parser"
-description = "An example parser for openBIS using the bam-masterdata interface."
+name = "openbis-parser-tofsims"
+description = "Parser for ION-TOF ToF-SIMS SurfaceLab files"
 dynamic = ["version"]
 readme = "README.md"
 requires-python = ">=3.14"
@@ -41,7 +41,7 @@ dev = [
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
-include = ["src/masterdata_parser_tofsims/*.py", "tests/*.py"]
+include = ["src/openbis_parser_tofsims/*.py", "tests/*.py"]
 exclude = [
     ".bzr",
     ".direnv",
@@ -115,7 +115,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [tool.setuptools_scm]
-write_to = "src/masterdata_parser_tofsims/_version.py"
+write_to = "src/openbis_parser_tofsims/_version.py"
 
 [project.entry-points."bam.parsers"]
-tof-sims-parser = "masterdata_parser_tofsims:masterdata_parser_tofsims_entry_point"
+tof-sims-parser = "openbis_parser_tofsims:openbis_parser_tofsims_entry_point"

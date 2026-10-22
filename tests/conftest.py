@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from src.masterdata_parser_tofsims import MasterdataParserTofsims
+from src.openbis_parser_tofsims import OpenbisParserTofsims
 
 if os.getenv("_PYTEST_RAISE", "0") != "0":
 
@@ -17,4 +17,4 @@ if os.getenv("_PYTEST_RAISE", "0") != "0":
 
 @pytest.fixture(scope="module")
 def parser():
-    return MasterdataParserTofsims()
+    return OpenbisParserTofsims()

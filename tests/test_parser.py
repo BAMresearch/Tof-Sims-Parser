@@ -2,7 +2,7 @@ from bam_masterdata.logger import logger
 from bam_masterdata.metadata.entities import CollectionType
 
 
-class TestOpenbisParserExample:
+class TestOpenbisParserTofsims:
     def test_parse(self, parser):
         collection = CollectionType()
         parser.parse([], collection, logger)
