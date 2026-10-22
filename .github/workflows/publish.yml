@@ -49,7 +49,7 @@ jobs:
 
     environment:
       name: pypi
-      url: https://pypi.org/p/tof-sims-parser
+      url: https://pypi.org/p/openbis-parser-tofsims
 
     permissions:
       id-token: write
