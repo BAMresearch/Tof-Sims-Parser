@@ -118,4 +118,4 @@ where = ["src"]
 write_to = "src/openbis_parser_tofsims/_version.py"
 
 [project.entry-points."bam.parsers"]
-tof-sims-parser = "openbis_parser_tofsims:openbis_parser_tofsims_entry_point"
+openbis-parser-tofsims = "openbis_parser_tofsims:openbis_parser_tofsims_entry_point"
